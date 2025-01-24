@@ -1,7 +1,7 @@
 export const apiUrl =
 	process.env.NODE_ENV !== "production"
 		? "http://localhost:5000/api"
-		: "https://note-app-mern-stack.onrender.com/api";
+		: "https://notestakingapp-nzk2.onrender.com/api";
 // backend url needs to be updated
 export const LOCAL_STORAGE_TOKEN_NAME = "note-app";
 
