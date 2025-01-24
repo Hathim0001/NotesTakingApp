@@ -28,7 +28,7 @@ function App() {
               render={(props) => <Auth {...props} authRoute="register" />}
             />
             <ProtectedRoute exact path="/dashboard" component={Dashboard} />
-            <ProtectedRoute exact path="/about" component={About} />
+            {/* <ProtectedRoute exact path="/about" component={About} /> */}
           </Switch>
         </Router>
       </PostContextProvider>

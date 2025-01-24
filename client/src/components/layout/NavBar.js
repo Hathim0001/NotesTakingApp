@@ -42,13 +42,7 @@ function NavBar() {
           >
             Dashboard
           </Nav.Link>
-          <Nav.Link
-            className="font-weight-bolder text-white"
-            to="/about"
-            as={Link}
-          >
-            About
-          </Nav.Link>
+
         </Nav>
 
         <Nav className="">
