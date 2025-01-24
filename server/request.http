@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+	"username": "giang",
+	"password": "cun123"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+	"username": "giang",
+	"password": "cun123"
+}
+
+### 
+
+POST http://localhost:5000/api/posts
+Content-type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5Y2ZjZjdlZDNkNTFkMTgzNzEwOTciLCJpYXQiOjE2MjUwMjg0MjJ9.oOfSarPZ0MO1Vwlg0ZwPWxxskMjQiYoxXSGlJiRsuX4
+
+{
+	"title": "Learn React",
+	"description": "ReactJS", 
+	"url": "react.org",
+	"status":"LEARNED"
+}
+
+### 
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5Y2ZjZjdlZDNkNTFkMTgzNzEwOTciLCJpYXQiOjE2MjQ4OTY2OTN9.wwc57Ywe2Atw5KBu-E1qfmmGSdssGCSh4EcfT4_Se4E
+
+### 
+
+PUT http://localhost:5000/api/posts/60dbf78151fe2806005b594c
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5Y2ZjZjdlZDNkNTFkMTgzNzEwOTciLCJpYXQiOjE2MjQ4OTY2OTN9.wwc57Ywe2Atw5KBu-E1qfmmGSdssGCSh4EcfT4_Se4E
+
+{
+	"title": "Updated Python",
+	"description": "Python", 
+	"url": "python.org",
+	"status":"TO LEARN"
+}
+
+### 
+
+DELETE http://localhost:5000/api/posts/60da01ac568af55484c7fce5
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5Y2ZjZjdlZDNkNTFkMTgzNzEwOTciLCJpYXQiOjE2MjQ5MDA0MTl9.bvmVdDXHm4_NvMPDRSmBEA2XiVCpOjHczuxWYJQICYM
